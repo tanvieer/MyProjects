@@ -1,0 +1,1 @@
+(function(){ [].forEach.call(document.querySelectorAll('input[type="radio"][value="5"]'),function(el){el.checked=true}); document.getElementById('Comment').value = 'good'; })();

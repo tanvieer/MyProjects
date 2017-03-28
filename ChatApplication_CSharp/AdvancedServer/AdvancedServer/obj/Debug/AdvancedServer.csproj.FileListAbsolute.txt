@@ -1,0 +1,10 @@
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\bin\Debug\AdvancedServer.exe.config
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\bin\Debug\AdvancedServer.exe
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\bin\Debug\AdvancedServer.pdb
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\bin\Debug\NetworksApi.dll
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\obj\Debug\AdvancedServer.csprojResolveAssemblyReference.cache
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\obj\Debug\AdvancedServer.Form1.resources
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\obj\Debug\AdvancedServer.Properties.Resources.resources
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\obj\Debug\AdvancedServer.csproj.GenerateResource.Cache
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\obj\Debug\AdvancedServer.exe
+C:\Users\Arcane\OneDrive\C# project\AdvancedServer\AdvancedServer\obj\Debug\AdvancedServer.pdb

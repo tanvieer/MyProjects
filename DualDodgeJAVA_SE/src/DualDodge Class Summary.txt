@@ -1,0 +1,58 @@
+CoOrdinateChange.java      ===== ekhane obstacle er cordinate change er function gula likha ase.
+
+
+
+DataAccess.java     ==== database theke data access er class.
+
+
+
+GameFrame.java     ===  game er main frame ta create kore keysensor er sathe link kora ase.
+
+
+
+GameLevel.java    ===   bivinno level a obstacle er hight width cng er jonno ei class, 
+			ekhan theke cordinatechange class er function gula call kora hoise.
+
+
+
+GamePanel.java   === 	frame er vetore graphics paint er kaj gula ekhane kora ase.
+
+
+
+KeySensor.java    ===   ekhane game er sob kaj kora hoise , ekta thread use kora hoise , 
+			oval rotating er function CoOrdinateChange class a likha ase, 
+			key press korle fuction call kore oval rotate korano hoise keysensor class er moddhe.
+
+
+
+Music.java     === 	music play , pause , loop er function gula override kore modify kore ei class a likha ase.
+
+
+
+PairCoOrdinate.java ---(rename)---> ObstaclesInfo.java    ===== ekhane just obstacle gular info save kora hoise, 
+							        obstacle info save korar datatype class eta.  oval er infor jonno alada kono class kora hoini , 
+								coz oval only duita.
+
+
+
+Rank.java    === 	rank info gula gula runtime variable a save korar jonno ei class , 
+			like rank data type class. database theke data niye ei class er 
+			instance niye score save kora hoise.
+
+
+
+RankPanel.java   === 	game er rank panel, ekhane user er rank show kora hoise.
+
+
+
+StartGame.java   === 	 ta game er entry point. eta start korar sathe sathe database er connection start hoi ,
+			 game er sob panel er objects create hoi, game music play hoi.
+
+
+
+StartPanel.java   ===   eta game start houar por game er home panel, 
+			1st a game er instruction gula ekhane show hoi.
+
+
+WindowSensor.java   === 	window close er action class eta. like override class. eta override kora hoise , 
+				music stop koranor jonno, nahole just ekta function call kore window chole kore dilei hoito.

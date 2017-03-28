@@ -1,0 +1,156 @@
+
+
+    ul {
+        list-style-type: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 2px solid #ddd;
+
+    }
+    th {
+        background-color: #A9A9A9;
+        text-align: center;
+        padding: 9px;
+        font-weight: bold;
+    }
+
+    td {
+        border: none;
+        text-align: center;
+        padding: 7px;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+
+
+
+
+
+
+ #hm {
+    	float: left;
+    	margin-left: 10px;
+    }
+.panel {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    padding: 50px;
+    display: none;
+}
+
+body {
+    background: url("../res/images/bus.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+a:link, a:visited {
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover, a:active {
+    background-color: #9400D3;
+}
+
+
+
+#rf {
+	float: right;
+}
+
+
+.btn {
+    padding: 2px;
+    margin: 2px;
+    width: 32%;
+    text-align: center;
+}
+.head {
+    background-color: #A9A9A9;
+    color: black;
+}
+#nam {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#head1 {
+    padding: 5px;
+    background-color:   #E6E6FA;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+.btn {
+        padding: 2px;
+        margin: 2px;
+        width: 32%;
+        text-align: center;
+    }
+    .head {
+        background-color: #A9A9A9;
+        color: black;
+    }
+    #nam {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #head1 {
+        padding: 5px;
+        background-color:   #E6E6FA;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    body {
+        background: url("../res/images/bus.png");
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+    }
+     #hm {
+            float: left;
+            margin-left: 10px;
+        }
+    .panel {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+    }
+    #rf {
+        float: right;
+    }
+
+    a:link, a:visited {
+        color: blue;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover, a:active {
+        background-color: #9400D3;
+    }

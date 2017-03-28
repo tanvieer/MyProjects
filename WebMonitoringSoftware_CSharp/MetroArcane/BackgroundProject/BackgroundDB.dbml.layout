@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BackgroundDB">
+  <DataContextMoniker Name="/BackgroundDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d8c7fc15-3764-4103-8861-99515b8b2f73" absoluteBounds="3.75, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BackgroundDBDataContext/LoginInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a78f0b32-2732-4530-9cff-b6f76595b08e" absoluteBounds="3.765, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac46c1a2-96da-43b4-ad12-260ff7da4a17" absoluteBounds="0.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/BackgroundDBDataContext/SmtpSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dbaf73d3-8cdd-46e6-8d70-9cfb1da2d540" absoluteBounds="0.76500000000000012, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dcb939ed-82bf-4fc1-aaed-756bc45c0225" absoluteBounds="0.5, 3.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BackgroundDBDataContext/Tag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2102a804-3caf-48e8-819c-e4daef272277" absoluteBounds="0.51500000000000012, 3.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c83316ab-a44b-411a-b06f-863eb378bd85" absoluteBounds="3.5, 3.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BackgroundDBDataContext/Website" />
+      <nestedChildShapes>
+        <elementListCompartment Id="51d3b006-19c8-4336-bb68-6ecd9c6d95d4" absoluteBounds="3.5149999999999997, 3.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 4.28929768880208); (2.5 : 4.28929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BackgroundDBDataContext/Website/Website_Tag" />
+      <nodes>
+        <classShapeMoniker Id="c83316ab-a44b-411a-b06f-863eb378bd85" />
+        <classShapeMoniker Id="dcb939ed-82bf-4fc1-aaed-756bc45c0225" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

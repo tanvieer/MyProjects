@@ -1,0 +1,200 @@
+﻿@model DataLayer.SalesReport
+
+
+@{List<DataLayer.SalesReport> model2 = (List<DataLayer.SalesReport>)Session["SalesCart"];}
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/SalesmanHeader.cshtml";
+}
+
+<h2>Salesman Page</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>SalesCart</legend>
+
+        <div class="error">
+            @{if (Session["error"] != null)
+                {
+                    <h2>
+                        @Session["error"].ToString()
+                    </h2>
+                }
+            }
+        </div>
+        <table border="1">
+            <tr>
+                <th>
+                    Add inventory
+                </th>
+
+                <th>
+                    Inventory Cart
+                </th>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.SalesManId)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(model => model.SalesManId, new { @readonly = "readonly" })
+                        @Html.ValidationMessageFor(model => model.SalesManId)
+                    </div>
+
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.InventoryID)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.InventoryID)
+                        @Html.ValidationMessageFor(model => model.InventoryID)
+                    </div>
+
+
+
+
+
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.ProductName)
+                    </div>
+
+
+
+                    <div class="editor-field">
+                        <select name="inID">
+                            @foreach (DataLayer.Inventory inv in (List<DataLayer.Inventory>)ViewBag.Inventorynamelist)
+                            {
+                                <option value="@inv.InventoryID">@inv.ProductName</option>
+                            }
+                        </select>
+                    </div>
+
+
+
+
+
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Quantity)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.Quantity)
+                        @Html.ValidationMessageFor(model => model.ProductPrice)
+                    </div>
+
+
+
+
+
+
+                    <p>
+                        <input type="submit" value="Add" />
+                    </p>
+                </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <td width="60%">
+
+
+
+                    <table border="1">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ProductName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Quantity)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ProductPrice)
+                            </th>
+                            <th>
+                                Total Product Price
+                            </th>
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                        @foreach (var item in model2)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ProductName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Quantity)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ProductPrice)
+                                </td>
+                                <td>
+                                    @(item.Quantity * item.ProductPrice)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.InventoryID })
+                                </td>
+                            </tr>
+                        }
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                Total Price =
+                            </td>
+                            <td>
+                                @Session["TotalPrice"].ToString() TAKA
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                    </table>
+
+
+
+                </td>
+            </tr>
+        </table>
+        <p>
+            @using (Html.BeginForm(FormMethod.Post))
+            {
+
+                <input type="submit" value="Confirm" formaction="@Url.Action("SaveToDB", "Sales")" />
+            }
+        </p>
+
+    </fieldset>
+                }
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

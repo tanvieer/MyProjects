@@ -1,0 +1,66 @@
+﻿@model IEnumerable<DataLayer.SalesReport>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SalesmanHeader.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Back To SaleCart", "Create")
+</p>
+<table border="1">
+    <tr>
+        <th>
+            Sold By
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SaleDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InventoryID)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @{
+                    if (Session["Name"] != null)
+                    {
+                        @Session["Name"].ToString()
+                    }
+                }
+                
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaleDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InventoryID)
+            </td>
+
+        </tr>
+    }
+
+</table>

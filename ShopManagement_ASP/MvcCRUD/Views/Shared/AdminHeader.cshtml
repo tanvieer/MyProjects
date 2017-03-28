@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <style>
+	   	.header-left {
+		    float: none;
+		    margin-top:0em;
+	    }
+        .header {
+	        padding: 0.3em 0 0em;
+	        border-bottom: 1px solid #eee;
+        }
+
+        .error {
+            color : red;
+            font-size: large;
+        }
+
+        .logo a{
+	        color: #E95393;
+	        font-family: 'open_sanssemibold';
+	        font-size: 2.8em;
+            text-decoration: none;
+        }
+        .header-right{
+	        float:right;
+	        width: 80%;
+        }
+        .top-nav ul li{
+	        display:inline-block;
+        }
+        .top-nav ul li a{
+	        color: #777777;
+	        padding: 1.8em 0.8em;
+	        display: block;
+	        font-size: 1.2em;
+	        transition:0.5s all;
+	        -webkit-transition:0.5s all;
+	        -moz-transition:0.5s all;
+	        -o-transition:0.5s all;
+             text-decoration: none;
+        }
+        .top-nav ul li a:hover{
+	        color:#E95393;
+        }
+        .top-nav{
+	        float:left;
+        }
+        .sign-ligin-btns{
+	        float:right;
+	        margin-top: 1.8em;
+        }
+
+        .wrap {
+		    width:90%;
+	    }
+        .clear{clear:both;}
+        .right{
+            float: right;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <!------start-768px-menu---->
+    <!---start-header---->
+    <div class="header">
+        <div class="wrap">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="index.html">Shop Management System</a>
+                    <div class="right">@Html.ActionLink("Logout", "LogOff", "User")</div>
+
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="top-nav">
+                    <ul>
+                        <li>@Html.ActionLink("Home", "Login", "User")</li>
+                        <li><a href="~/Admin/ManageEmployee">ManageEmployee</a></li>
+                        <li><a href="~/SalesReport/Index">SalesReport</a></li>
+                        <li><a href="~/Sales/Create">SaleCart</a></li>
+                        <li><a href="~/Inventory/Index">Inventory</a></li>
+                        <li>@Html.ActionLink("SalesManReport", "Index", "SalesManReport")</li>
+                        <hr />
+
+                        <br />
+                    </ul>
+                </div>
+                <div class="clear"> </div>
+
+
+                        <div>
+                            @RenderBody()
+                        </div>
+</body>
+</html>

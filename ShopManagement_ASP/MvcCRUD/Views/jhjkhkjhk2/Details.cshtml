@@ -1,0 +1,43 @@
+﻿@model DataLayer.Inventory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Inventory</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProductName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProductName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProductBuyPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProductBuyPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProductSellPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProductSellPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProductQuantity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProductQuantity)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.InventoryID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

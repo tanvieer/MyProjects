@@ -1,0 +1,87 @@
+﻿@model IEnumerable<DataLayer.SalesReport>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/ManagerHeader.cshtml";
+}
+
+
+
+<p>
+    <h1 style="color:blue;">Sales Report</h1>
+    <h2 style="color:red;">@ViewBag.totalsell </h2>
+    <h2 style="color:red;">@ViewBag.profit </h2>
+</p>
+
+<form action="Index" method="post">
+    Enter dates from:<br>
+    <input type="date" name="StartDate" <br><br>
+    To:<br>
+    <input type="date" name="EndDate"<br><br>
+    <input type="submit">
+</form>
+
+
+
+
+<table border="2">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SalesManId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SaleDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuyPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InventoryID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SalesManName)
+        </th>
+      
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalesManId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaleDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BuyPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InventoryID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalesManName)
+            </td>
+          
+        </tr>
+    }
+
+</table>

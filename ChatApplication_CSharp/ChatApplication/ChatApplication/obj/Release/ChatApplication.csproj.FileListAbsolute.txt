@@ -1,0 +1,9 @@
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\bin\Release\ChatApplication.exe.config
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\bin\Release\ChatApplication.exe
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\bin\Release\ChatApplication.pdb
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\bin\Release\NetworksApi.dll
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Release\ChatApplication.Form1.resources
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Release\ChatApplication.Properties.Resources.resources
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Release\ChatApplication.csproj.GenerateResource.Cache
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Release\ChatApplication.exe
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Release\ChatApplication.pdb

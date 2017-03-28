@@ -1,0 +1,30 @@
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\bin\Debug\Server Application.exe
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\bin\Debug\Server Application.pdb
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\bin\Debug\NetworksApi.dll
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\obj\x86\Debug\Server_Application.Form1.resources
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\obj\x86\Debug\Server_Application.Properties.Resources.resources
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\obj\x86\Debug\Server Application.exe
+C:\Users\Nart Schinackow\AppData\Local\Temporary Projects\Server Application\obj\x86\Debug\Server Application.pdb
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\obj\x86\Debug\Server Application.exe
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\obj\x86\Debug\Server Application.pdb
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\bin\Debug\Server Application.exe
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\bin\Debug\Server Application.pdb
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\bin\Debug\NetworksApi.dll
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\obj\x86\Debug\Server_Application.Form1.resources
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\obj\x86\Debug\Server_Application.Properties.Resources.resources
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Nart Schinackow\Desktop\Server Application\Server Application\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\obj\x86\Debug\Server Application.exe
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\obj\x86\Debug\Server Application.pdb
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\bin\Debug\Server Application.exe
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\bin\Debug\Server Application.pdb
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\bin\Debug\NetworksApi.dll
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\obj\x86\Debug\Server_Application.Form1.resources
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\obj\x86\Debug\Server_Application.Properties.Resources.resources
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Nart Schinackow\Desktop\Chat Client Server\Server Application\Server Application\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -1,0 +1,10 @@
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\bin\Debug\ChatApplication.exe.config
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\bin\Debug\ChatApplication.exe
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\bin\Debug\ChatApplication.pdb
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\bin\Debug\NetworksApi.dll
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Debug\ChatApplication.csprojResolveAssemblyReference.cache
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Debug\ChatApplication.Form1.resources
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Debug\ChatApplication.Properties.Resources.resources
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Debug\ChatApplication.csproj.GenerateResource.Cache
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Debug\ChatApplication.exe
+C:\Users\Arcane\OneDrive\C# project\ChatApplication\ChatApplication\obj\Debug\ChatApplication.pdb

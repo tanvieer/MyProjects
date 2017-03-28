@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DataLayer.Inventory>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/ManagerHeader.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+    <p>
+        product Less Than: 
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+        <input type="text" name="Productlessthan" value="@ViewBag.amount"><br>
+        <input type="submit" value="show" formaction="@Url.Action("Index","Inventory")"/>
+        }
+    </p>
+
+    <table border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductBuyPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductSellPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductQuantity)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductBuyPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductSellPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductQuantity)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.InventoryID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.InventoryID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.InventoryID })
+                </td>
+            </tr>
+        }
+
+    </table>
+
