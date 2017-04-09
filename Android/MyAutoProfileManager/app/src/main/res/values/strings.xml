@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AutoProfileManager</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3488217849496330/5830342803</string>
+    <string name="banner_ad_unit_id_old">ca-app-pub-3940256099942544/6300978111</string>
+
+
+
+
+    <string name="start">Start Service</string>
+    <string name="stop">Stop Service</string>
+    <string name="instruction">
+        1.Sensors will be activated in every 10 seconds for 1 second only. [i.e.BATTERY LIFE] \n\n
+        2.If same number calls more than 5 times, profile will be changed to NORMAL MODE. [i.e.EMERGENCY]\n\n
+        3.If LIGHT less than 10 LUX, profile will be changed to VIBRATE MODE. [i.e.NIGHT]\n\n
+        4.If mobile is in pocket, profile will be changed to VIBRATE MODE. [i.e.POCKET]\n\n
+        5.If mobile screen is FLIPPED DOWN, profile will be changed to SILENT MODE. [i.e.MEETING]\n\n
+        MOHAMMAD TANVIR ISLAM\n
+        14-25471-1\n
+
+    </string>
+</resources>
