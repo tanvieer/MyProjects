@@ -40,7 +40,7 @@ public class ProfileManager extends Service {
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-        Log.d(TAG, "onBind Called");
+       // Log.d(TAG, "onBind Called");
         return null;
     }
 
@@ -53,9 +53,11 @@ public class ProfileManager extends Service {
         _AccelerometerSensor = sm.getSensorList(Sensor.TYPE_ACCELEROMETER).get(0);
         lightSensor = sm.getSensorList(Sensor.TYPE_LIGHT).get(0);
 
-        Log.d(TAG, "onStartCommand Called");
-        Log.d(TAG, "value_AccelarometerZ before =" + Double.toString(value_AccelarometerZ));
-        Log.d(TAG, "value_lightLux before =" + Double.toString(value_lightLux));
+      //  Log.d(TAG, "onStartCommand Called");
+      //  Log.d(TAG, "value_AccelarometerZ before =" + Double.toString(value_AccelarometerZ));
+      //  Log.d(TAG, "value_lightLux before =" + Double.toString(value_lightLux));
+        value_lightLux = 0.0;
+        value_AccelarometerZ = 0.0;
         AccelerometerCheckingStart();
         LightCheckingStart();
 
@@ -156,30 +158,37 @@ public class ProfileManager extends Service {
 //=================================================pROFILE===========================================
 
     private void ChangeProfile(){
-        Log.d(TAG,"ProfileChanger = "+myAudioManager.getRingerMode());
+        Log.d(TAG,"ProfileChanger RINGERMODE = "+myAudioManager.getRingerMode());   // 0 = silent, 1 = vibrate, 2 = normal
         if( MyCallReciver.callCounter < 5 && value_AccelarometerZ >-2 && value_lightLux<10 &&   myAudioManager.getRingerMode() != AudioManager.RINGER_MODE_VIBRATE) {
             Log.d("numrcv", "  PROFILE MANAGER night counter1  = " + MyCallReciver.callCounter);
+            Log.d(TAG, " night value_AccelarometerZ  = " + value_AccelarometerZ);
+            Log.d(TAG, " night value_lightLux  = " + value_lightLux);
             myAudioManager.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
         }
         else if( MyCallReciver.callCounter < 5 && value_AccelarometerZ <-7 && myAudioManager.getRingerMode() != AudioManager.RINGER_MODE_SILENT) {
             myAudioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
             Log.d("numrcv", "  PROFILE MANAGER flipped counter2  = " + MyCallReciver.callCounter);
+            Log.d(TAG, " flipped value_AccelarometerZ  = " + value_AccelarometerZ);
+            Log.d(TAG, " flipped value_lightLux  = " + value_lightLux);
         }
         else if ( value_lightLux>500 && value_AccelarometerZ >-2 && myAudioManager.getRingerMode() != AudioManager.RINGER_MODE_NORMAL){
             myAudioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
             Log.d("numrcv", "  PROFILE MANAGER unflipped counter3  = " + MyCallReciver.callCounter);
+            Log.d(TAG, " UNflipped value_AccelarometerZ  = " + value_AccelarometerZ);
+            Log.d(TAG, " UNflipped value_lightLux  = " + value_lightLux);
         }
         if (MyCallReciver.callCounter > 4 && myAudioManager.getRingerMode() != AudioManager.RINGER_MODE_NORMAL){
             myAudioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 
             Log.d("numrcv", "  PROFILE MANAGER emergency counter4  = " + MyCallReciver.callCounter);
+
+            Log.d(TAG, " EMERGENCY value_AccelarometerZ  = " + value_AccelarometerZ);
+            Log.d(TAG, " EMERGENCY value_lightLux  = " + value_lightLux);
+            Log.d(TAG, " EMERGENCY counter4  = " + MyCallReciver.callCounter);
         }
 
-        Log.d("numrcv", "  PROFILE MANAGER counter DEFAULT = " + MyCallReciver.callCounter);
-
-
-
-
+        Log.d(TAG, "  PROFILE MANAGER counter DEFAULT = " + MyCallReciver.callCounter);
+        
     }
 
 
@@ -187,7 +196,7 @@ public class ProfileManager extends Service {
 
     public boolean TimeCompare() {
         // TODO Auto-generated method stub
-        Log.d("TEST_TAG", "Time Compare a dhukse");
+       // Log.d("TEST_TAG", "Time Compare a dhukse");
         Calendar c = Calendar.getInstance();
 
 
