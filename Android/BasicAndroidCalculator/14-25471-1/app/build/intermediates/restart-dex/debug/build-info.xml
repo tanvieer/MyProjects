@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="24"
+    density="hdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="644157998054729"
+    token="6750425672701722188"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="F:\Others\WorkSpace\AndroidStudio\WorkSpace\LabCalculatorTest\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+
+    <build
+        timestamp="643985747058310"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="F:\Others\WorkSpace\AndroidStudio\WorkSpace\LabCalculatorTest\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="644157998054729"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="F:\Others\WorkSpace\AndroidStudio\WorkSpace\LabCalculatorTest\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+
+</instant-run>
